@@ -19,8 +19,8 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 
 ### Trabajo previo: introducción a Git y GitHub
 
-GitHub es un un servicio en la nube con una interfaz web que ayuda a los desarrolladores a almacenar y administrar su código, 
-así como a llevar un registro y control de cualquier cambio que se realice sobre ese código. 
+GitHub es un un servicio en la nube con una interfaz web que ayuda a los desarrolladores a almacenar y administrar el código
+fuente de sus programas así como a llevar un registro y control de cualquier cambio que se realice sobre ese código. 
 Git es un sistema distribuido de control de versiones.
 En Git todo el código y su historial de cambios se encuentran disponibles en el ordenador del desarrollador.
 En la web puede Ud. encontrar multitud de tutoriales sobre el uso de GitHub y git.
@@ -47,26 +47,26 @@ Acceda a su cuenta y siga
 para crear un repositorio en su cuenta de GitHub.
 Elija `IB-2020-2021-Practica7-Funciones` como nombre para su repositorio (en lugar de `hello-world`).
 Haga que su repositorio sea privado.
-El repositorio que ha creado no contiene programas y apenas contendrá un fichero README.md.
+El repositorio que ha creado no contiene programas y apenas contendrá un fichero `README.md`.
 GitHub utiliza profusamente ficheros de texto con formato Markdown.
-El fichero README.md (así lo indica su extensión) es un fichero Markdown.
+El fichero `README.md` (así lo indica su extensión) es un fichero Markdown.
 Markdown es un lenguaje de marcas que permite aplicar formato (negrita, itálicas, imágenes, listas, etc.) a un
 fichero de texto.
 Este fichero que está Ud. leyendo está escrito en formato Markdown.
 El formato fue ideado para elaborar textos cuyo destino iba a ser la web con más rapidez y sencillez que si se
 empleara HTML.
 
-No es neceario que aprenda Markdown en esta asignatura, pero si tiene interés por ello, esta referencia 
+No es neceario que aprenda Markdown en esta asignatura, pero si tiene interés por ello, la referencia 
 [Qué es Markdown, para qué sirve y cómo usarlo](https://www.genbeta.com/guia-de-inicio/que-es-markdown-para-que-sirve-y-como-usarlo)
 puede servirle de introducción,
-[este tutorial](https://guides.github.com/features/mastering-markdown/) es una buena referencia para un
+[este tutorial](https://guides.github.com/features/mastering-markdown/) es útil para un
 conocimiento más profundo y por último 
 [StackEdit](https://stackedit.io/) es un editor de Markdown con una interfaz web, que puede resultarle útil.
 
-Antes de comenzar a trabajar ahora con Git, añada su clave ssh a su cuenta GitHub.
+Antes de comenzar a trabajar ahora con Git, añada la clave ssh de su máquina virtual Linux a su cuenta GitHub.
 Esta tarea es posible que la realizara en la primera práctica de la asignatura, pero en caso contrario ha de
 hacerlo Ud. ahora siguiendo 
-[estas instrucciones](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+[estas instrucciones](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 En esa página siga el enlace 
 [Generated a new SSH key and added it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 para generar una clave ssh en su máquina virtual (también puede hacer lo mismo con otros sistemas Linux con
@@ -81,7 +81,7 @@ prácticas, cree un directorio con nombre `practica07-Funciones` y ejecute en li
 git clone git@github.com:username/IB-2020-2021-Practica7-Funciones.git practica07-Funciones
 ```
 La dirección de su repositorio en GitHub (en el comando anterior es
-`git@github.com:username/IB-2020-2021-Practica7-Funciones.git`) ha de obtenerla (cópiela de allí) en la web de GitHub tal como
+`git@github.com:username/IB-2020-2021-Practica7-Funciones.git`) ha de obtenerla (cópiela de allí) en su cuenta de GitHub tal como
 se indica en las instrucciones anteriores.
 De las tres opciones disponibles (HTTPS, ssh, GitHub Cli) utilice la opción ssh.
 
