@@ -99,7 +99,7 @@ $ git add .
 $ git commit -m "Texto alusivo a los cambios realizados"
 $ git push
 ```
-* El primero de ellos `git pull` es siempre conveniente porque de ese modo se asegura que se descarga al
+* El primero de los comandos anteriores, `git pull` es siempre conveniente porque de ese modo se asegura que se descarga al
 ordenador la última versión del código que esté alojado en la nube de GitHub.
 * `git add .` actualiza el índice de git con el contenido del directorio actual (nótese el punto -directorio
   actual, el de trabajo- en el comando).
@@ -125,17 +125,51 @@ Haga que cada uno de sus programas conste de 3 ficheros:
 
 Modifique los nombres de los ficheros que aquí se proponen para adaptarlos al ejercicio en cuestión.
 
-1. Escriba un programa `primes.cc` que 
+1. Escriba un programa `prime.cc` que tome por línea de comandos un número natural, N e imprima en pantalla
+el n-ésimo número primo.
+Si se ejecuta por ejemplo,
+
 ```
-Introduzca un número: 100
-2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+$ ./prime 5
+11
+```
+El programa imprime 11, puesto que és es el quinto número en la secuencia de números primos.
+
+2. Escriba un programa `difference_of_squares.cc` que tome como parámetro pasado por línea de comandos un
+número natural N, e imprima en pantalla 
+
+El cuadrado de la suma de los 10 primeros números naturales es (1 + 2 + ... + 10)<sup>2</sup> = 55<sup>2</sup> = 3025.
+
+La suma de los cuadrados de los primeros diez números naturales es 1<sup>2</sup> + 2<sup>2</sup> + ... + 10<sup>2</sup> = 385.
+
+Por tanto la diferencia entre el cuadrado de la suma y la suma de cuadrados es 3025 - 385 = 2640.
+
+Si el programa se ejecuta:
+```
+$ ./difference_of_squares 10
+2640
 ```
 
-2. 
+Haga que si su programa se ejecuta sin pasar ningún parámetro por la línea de comandos, el programa finalice
+su ejecución imprimiendo en pantalla un mensaje explicativo de su funcionamiento:
+```
+$ ./difference_of_squares 
+$ difference_of_squares: falta un número natural como parámetro
+Pruebe 'difference_of_squares --help' para más información.
+```
+si el usuario pasa como único parámetro la opción `--help`, el programa finalizará su ejecución e imprimirá
+por pantalla un texto explicativo de su finalidad y comportamiento.
 
-3.- 
+3.- Desarrolle un programa `vector_statistics.cc` que tome como parámetro por línea de comandos un tres
+números naturales N, M, P, y cree un vector de N componentes de tipo `double` cuyos valores hayan sido generados
+aleatoriamente en el rango `[M, P]`.
+El programa dispondrá de funciones que calculen:
+* La media
+* La desviación estándar
+* El máximo
+* El mínimo
+de los valores almacenados en el vector.
 
-4.- 
 
 ### Referencias
 * [Tutorial de Git. Manual básico con ejemplos](https://www.diegocmartin.com/tutorial-git/) 
