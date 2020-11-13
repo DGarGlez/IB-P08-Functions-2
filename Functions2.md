@@ -125,6 +125,9 @@ Haga que cada uno de sus programas conste de 3 ficheros:
 
 Modifique los nombres de los ficheros que aquí se proponen para adaptarlos al ejercicio en cuestión.
 
+La compilación de los programas correspondientes a cada ejercicio se automatizará con un fichero Makefile para
+cada ejercicio.
+
 1. Escriba un programa `prime.cc` que tome por línea de comandos un número natural, N e imprima en pantalla
 el n-ésimo número primo.
 Si se ejecuta por ejemplo,
