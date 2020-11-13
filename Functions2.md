@@ -139,7 +139,8 @@ $ ./prime 5
 El programa imprime 11, puesto que és es el quinto número en la secuencia de números primos.
 
 2. Escriba un programa `difference_of_squares.cc` que tome como parámetro pasado por línea de comandos un
-número natural N, e imprima en pantalla 
+número natural N, e imprima en pantalla la diferencia entre el cuadrado de la suma de los primeros N números
+naturales y la suma de los cuadrados de esos mismos números.
 
 El cuadrado de la suma de los 10 primeros números naturales es (1 + 2 + ... + 10)<sup>2</sup> = 55<sup>2</sup> = 3025.
 
@@ -172,6 +173,15 @@ El programa dispondrá de funciones que calculen:
 * El máximo
 * El mínimo
 de los valores almacenados en el vector.
+
+4.- Desarrolle un programa `string_statistics.cc` que inicialice un vector constante de 10 componentes de tipo
+`std::string`, es decir, un vector con 10 cadenas de texto.
+Elija Ud. mismo las cadenas que utiliza para inicializar el vector.
+Haga que el programa imprima para cada una de las cadenas de texto del vector:
+* La longitud de la cadena.
+* El primer carácter de la cadena.
+* El último carácter de la cadena.
+* Sí/No la cadena en cuestión contiene el texto `abracadabra`.
 
 
 ### Referencias
