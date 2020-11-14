@@ -71,6 +71,9 @@ En esa página siga el enlace
 [Generated a new SSH key and added it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 para generar una clave ssh en su máquina virtual (también puede hacer lo mismo con otros sistemas Linux con
 los que trabaje habitualmente, como su instalación de VirtualBox o WSL).
+También la sección "Trabajando con Git en Remoto" del
+[tutorial de Diego Martín](https://www.diegocmartin.com/tutorial-git/) puede serle de ayuda para
+configurar la clave ssh.
 
 Una vez configurada su clave ssh y creado su repositorio en GitHub, siga 
 [estas otras instrucciones](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
