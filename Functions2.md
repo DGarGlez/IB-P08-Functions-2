@@ -3,6 +3,10 @@
 ### Objetivos
 Los objetivos de esta práctica son que el alumnado:
 * Desarrolle programas sencillos en C++ que utilicen funciones y todos los tipos de sentencias estudiadas
+* Sea capaz de organizar el código fuente de sus programas en C++ en diferentes ficheros siguiendo la
+  organización habitual para este tipo de proyectos
+* Sepa automatizar la compilación de sus programas en C++ utilizando la herramienta `make`
+* Conozca el funcionamiento básico de las herramientas `git` y GitHub
 
 ### Rúbrica de evaluacion de esta práctica
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
@@ -16,20 +20,21 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
   variables que utilice para iterar en un bucle.
 * Antes de su ejecución, todos los programas que desarrolle, deben imprimir en pantalla un
   mensaje indicando la finalidad del programa así como la información que precisará del usuario para su correcta ejecución.
+* Todo el código que el alumnado presente para su evaluación ha de estar alojado en un repositorio privado de
+  GitHub
 
 ### Trabajo previo: introducción a Git y GitHub
-
 GitHub es un un servicio en la nube con una interfaz web que ayuda a los desarrolladores a almacenar y administrar el código
 fuente de sus programas así como a llevar un registro y control de cualquier cambio que se realice sobre ese código. 
 Git es un sistema distribuido de control de versiones.
 En Git todo el código y su historial de cambios se encuentran disponibles en el ordenador del desarrollador.
-En la web puede Ud. encontrar multitud de tutoriales sobre el uso de GitHub y git.
-[Este tutorial](https://www.diegocmartin.com/tutorial-git/) puede ser un buen punto de comienzo para estudiar
-estas herramientas y esta [guía simple](https://rogerdudler.github.io/git-guide/) también puede servir para un
-uso inicial de ellas.
+En la web se puede encontrar multitud de tutoriales sobre el uso de GitHub y git y
+[este](https://www.diegocmartin.com/tutorial-git/), por ejemplo puede ser un buen punto de comienzo para estudiar
+ambas herramientas.
+Esta [guía simple](https://rogerdudler.github.io/git-guide/) también puede servir para un uso inicial de ellas.
 
 A la hora de estudiar estas herramientas ha de tener en cuenta que el uso que en esta asignatura se va a
-realizar de las mismas es básico: cada estudiante va a utilizar git/GitHub exclusivamente para almacenar el
+realizar de las mismas es básico: inicialmente cada estudiante va a utilizar git/GitHub exclusivamente para almacenar el
 código fuente de cada una de las prácticas que desarrolla. 
 No se pretende que compartan código a través de git ni que colaboren en el desarrollo de código usando estas
 herramientas.
@@ -45,21 +50,21 @@ Comience su trabajo con GitHub utilizando la cuenta que creó en la primera prá
 Acceda a su cuenta y siga 
 [estas instrucciones](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo)
 para crear un repositorio en su cuenta de GitHub.
-Elija `IB-2020-2021-Practica7-Funciones` como nombre para su repositorio (en lugar de `hello-world`).
+Elija `IB-2020-2021-Practica8-Funciones` como nombre para su repositorio (en lugar de `hello-world`).
 Haga que su repositorio sea privado.
 El repositorio que ha creado no contiene programas y apenas contendrá un fichero `README.md`.
 GitHub utiliza profusamente ficheros de texto con formato Markdown.
-El fichero `README.md` (así lo indica su extensión) es un fichero Markdown.
+El fichero `README.md` (así lo indica su extensión) es un fichero de texto en formato Markdown.
 Markdown es un lenguaje de marcas que permite aplicar formato (negrita, itálicas, imágenes, listas, etc.) a un
 fichero de texto.
-Este fichero que está Ud. leyendo está escrito en formato Markdown.
+Este texto que está Ud. leyendo está escrito en un fichero con formato Markdown.
 El formato fue ideado para elaborar textos cuyo destino iba a ser la web con más rapidez y sencillez que si se
 empleara HTML.
 
 No es neceario que aprenda Markdown en esta asignatura, pero si tiene interés por ello, la referencia 
 [Qué es Markdown, para qué sirve y cómo usarlo](https://www.genbeta.com/guia-de-inicio/que-es-markdown-para-que-sirve-y-como-usarlo)
-puede servirle de introducción,
-[este tutorial](https://guides.github.com/features/mastering-markdown/) es útil para un
+puede servirle de introducción.
+[Este tutorial](https://guides.github.com/features/mastering-markdown/) es útil para un
 conocimiento más profundo y por último 
 [StackEdit](https://stackedit.io/) es un editor de Markdown con una interfaz web, que puede resultarle útil.
 
@@ -77,19 +82,20 @@ configurar la clave ssh.
 
 Una vez configurada su clave ssh y creado su repositorio en GitHub, siga 
 [estas otras instrucciones](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-para clonar el repositorio que ha creado en GitHub usando git.
-Para ello, en su máquina virtual linux de la asignatura en el directorio en el que esté organizando sus
-prácticas, cree un directorio con nombre `practica07-Funciones` y ejecute en linux el comando:
+para clonar el repositorio que ha creado en GitHub usando `git`.
+Para ello, en su máquina virtual linux de la asignatura acceda al directorio en el que esté organizando sus
+prácticas y ejecute los comandos:
 ```
-git clone git@github.com:username/IB-2020-2021-Practica7-Funciones.git practica07-Funciones
+$ mkdir practica08-Funciones
+$ git clone git@github.com:username/IB-2020-2021-Practica8-Funciones.git practica08-Funciones
 ```
 La dirección de su repositorio en GitHub (en el comando anterior es
-`git@github.com:username/IB-2020-2021-Practica7-Funciones.git`) ha de obtenerla (cópiela de allí) en su cuenta de GitHub tal como
+`git@github.com:username/IB-2020-2021-Practica8-Funciones.git`) ha de obtenerla (cópiela de allí) en su cuenta de GitHub tal como
 se indica en las instrucciones anteriores.
 De las tres opciones disponibles (HTTPS, ssh, GitHub Cli) utilice la opción ssh.
 
 A continuación ya está todo listo para que acceda al directorio de trabajo de esta práctica (el directorio que
-en este documento se ha llamado `practica07-Funciones`) y desarrolle en él todos los ejercicios de esta
+en este documento se ha llamado `practica08-Funciones`) y desarrolle en él todos los ejercicios de esta
 práctica.
 Resulta recomendable que dentro de ese directorio cree subdirectorios para cada uno de los ejercicios.
 Ahora todo el trabajo ha de realizarlo de la forma habitual, editando sus programas con VSC dentro de ese
@@ -151,7 +157,7 @@ La suma de los cuadrados de los primeros diez números naturales es 1<sup>2</sup
 
 Por tanto la diferencia entre el cuadrado de la suma y la suma de cuadrados es 3025 - 385 = 2640.
 
-Si el programa se ejecuta:
+Se muestra a continuación un ejemplo de la ejecución del programa:
 ```
 $ ./difference_of_squares 10
 2640
@@ -161,7 +167,7 @@ Haga que si su programa se ejecuta sin pasar ningún parámetro por la línea de
 su ejecución imprimiendo en pantalla un mensaje explicativo de su funcionamiento:
 ```
 $ ./difference_of_squares 
-$ difference_of_squares: falta un número natural como parámetro
+difference_of_squares: falta un número natural como parámetro
 Pruebe 'difference_of_squares --help' para más información.
 ```
 si el usuario pasa como único parámetro la opción `--help`, el programa finalizará su ejecución e imprimirá
@@ -194,4 +200,3 @@ Haga que el programa imprima para cada una de las cadenas de texto del vector:
 * [StackEdit](https://stackedit.io/)
 * [git - the simple guide](https://rogerdudler.github.io/git-guide/)
 * [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
-* 
