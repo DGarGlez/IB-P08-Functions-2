@@ -24,7 +24,7 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
   GitHub
 
 ### Trabajo previo: introducción a Git y GitHub
-GitHub es un un servicio en la nube con una interfaz web que ayuda a los desarrolladores a almacenar y administrar el código
+GitHub es un servicio en la nube con una interfaz web que ayuda a los desarrolladores a almacenar y administrar el código
 fuente de sus programas así como a llevar un registro y control de cualquier cambio que se realice sobre ese código. 
 Git es un sistema distribuido de control de versiones.
 En Git todo el código y su historial de cambios se encuentran disponibles en el ordenador del desarrollador.
